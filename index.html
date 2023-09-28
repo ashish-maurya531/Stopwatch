@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch Javascript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="theme-toggle" id="theme-toggle"></div> 
+        <h1 class=" stopwatch-title " >STOPWATCH</h1>
+        <div class="timer-display">00:00:00:000</div>
+        <div class="buttons">
+            <button id="lap-timer">Lap</button> 
+            <button id="pause-timer">Pause</button>
+            <button id="start-timer">Start</button>
+            <button id="reset-timer" >Reset</button>
+        </div>
+       
+        <table class="lap-table" >
+        <thead >
+            <tr >
+                <th>Lap</th>
+                <th>Lap Time</th>
+                <th>Total Time</th>
+            </tr>
+        </thead>
+        <tbody id="lap-list" class="lap-list"></tbody>
+        </table>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
